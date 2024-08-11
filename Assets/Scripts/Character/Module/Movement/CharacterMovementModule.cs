@@ -224,6 +224,9 @@ public class CharacterMovementModule : Module
     #endregion
 
     #region Main Loop
+    /// <summary>
+    /// Runs every frame (60 FPS)
+    /// </summary>
     private void FixedUpdate()
     {
         if (canInput)
