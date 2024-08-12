@@ -235,12 +235,6 @@ public class CharacterMovementModule : Module
             inputtedMovement.Normalize();
             Vector2 velocity = Master.r2d.velocity;
 
-            /*if(Master.r2d.velocity.magnitude <= 10 && isShotgunDashing)
-            {
-                isShotgunDashing = false;
-                Master.gameObject.layer = 7;
-            }*/
-
             UpdateOWPCollision();
             UpdateWalk(velocity);
             UpdateDash();

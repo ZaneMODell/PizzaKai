@@ -36,9 +36,6 @@ public class TommyGunWeapon : WeaponModule
     {
         base.Start();
         weaponName = WeaponAudioStrings.TommyName;
-        //Sets the image for the tommy flash to be clear
-
-        //Left shifts the layer num  to represent layer number by a single bit in the 32-bit integer
     }
     #endregion
 
@@ -49,9 +46,7 @@ public class TommyGunWeapon : WeaponModule
     /// </summary>
     public override void AltFire()
     {
-        //base.AltFire();
-        StartCoroutine(TommyRapidFire());
-        
+        StartCoroutine(TommyRapidFire());   
     }
 
     public override void ResetAlt()
